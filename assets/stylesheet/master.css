@@ -1,0 +1,66 @@
+@import "tailwindcss";
+
+@layer base {
+    .row {
+        @apply flex flex-wrap w-full ;
+    }
+
+    
+}
+
+@layer components {}
+
+@layer utilities {
+    .favColorPink{
+        @apply text-[#fd4680];
+    }
+    .favColorGray{
+        @apply text-[#333];
+    }
+    .favColorSlideBlue{
+        @apply text-[#609fd1];
+    }
+    .favColorSlidePink{
+        @apply text-[#ce616e];
+    }
+    .favColorSlideBrown{
+        @apply text-[#c16733];
+    }
+    .favColorTextGray{
+        @apply text-[rgba(51,51,51,.6)]
+    }
+    .favColorTextBlue{
+        @apply text-[#16527f]
+    }
+
+    @keyframes slider {
+    0%, 33.33% {
+      transform: translateX(0%);
+    }
+    33.34%, 66.66% {
+      transform: translateX(-100%);
+    }
+    66.67%, 100% {
+      transform: translateX(-200%);
+    }
+  }
+
+  .animate-slider {
+    animation: slider 9s ease-in-out infinite;
+  }
+
+
+  .font-titr{
+  font-family: "Borel", cursive;
+  font-weight: 400;
+  font-style: normal;
+  }
+  
+.montserrat-mainFont {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+}
+
